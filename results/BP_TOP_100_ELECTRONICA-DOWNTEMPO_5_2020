@@ -1,0 +1,42 @@
+Entry:Roderic|Jacqueline Jones>Passengers>Acid Pauli
+Search:Roderic Jacqueline Jones Passengers Acid Pauli
+Tracks:Passengers - Acid Pauli Remix
+Expected Artists:Roderic|Jacqueline Jones|Acid Pauli
+Found Artists:Roderic Jacqueline Jones
+Normalized: roderic|jacqueline jones|acid pauli in roderic jacqueline jones
+
+Entry:Oliver Koletzki>Rainbow Serpents>Iorie
+Search:Oliver Koletzki Rainbow Serpents Iorie
+Tracks:
+Expected Artists:Oliver Koletzki|Iorie
+Found Artists:None
+Normalized: arutani in arutani
+
+Entry:Sidartha Siliceo|Simon Vuarambon|Lost Desert>Firedance uring Sidartha Siliceo>Mike Tohr
+Search:Sidartha Siliceo Simon Vuarambon Lost Desert Firedance uring Sidartha Siliceo Mike Tohr
+Tracks:
+Expected Artists:Sidartha Siliceo|Simon Vuarambon|Lost Desert|Mike Tohr
+Found Artists:None
+Normalized: stimming|acid pauli|nu in stimming acid pauli nu
+
+Entry:Guy Maayan>Yelle O Yalla>
+Search:Guy Maayan Yelle O Yalla 
+Tracks:
+Expected Artists:Guy Maayan
+Found Artists:None
+Normalized: felix da housecat|royksopp in felix da housecat royksopp
+
+Entry:Sidartha Siliceo|Simon Vuarambon|Lost Desert>Firedance uring Sidartha Siliceo>
+Search:Sidartha Siliceo Simon Vuarambon Lost Desert Firedance uring Sidartha Siliceo 
+Tracks:
+Expected Artists:Sidartha Siliceo|Simon Vuarambon|Lost Desert
+Found Artists:None
+Normalized: munk|lizzie paige|purple disco machine in munk lizzie paige purple disco machine
+
+Entry:Guy Maayan>Sensacion>
+Search:Guy Maayan Sensacion 
+Tracks:
+Expected Artists:Guy Maayan
+Found Artists:None
+Normalized: four tet in four tet
+
