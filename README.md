@@ -13,3 +13,5 @@ get_beatport_tracklist.py
 add_to_playlist.py
 
 output will appear and overright per genre/month. The output is stricly the failed tracks. You should see a new spotify playlist in your playlists with the tracks that succeeded. I see a 80 to 96% success rate depending on track availability. Further optimizations could be make, but this is a fairly strict search on all artists and remix artists needing to be included. 
+
+Subsequent runs will update a genre playlist for the current month. Come a new month, a new playlist will be created. 
