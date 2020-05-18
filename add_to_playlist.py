@@ -9,12 +9,13 @@ from spotipy import util
 import my_util
 import config as conf
 
-with open('C:/Users/justi/Documents/spotify_creds.txt', 'r', encoding='utf-8') as file:
+with open(conf.CREDS_FILE_PATH, 'r', encoding='utf-8') as file:
     creds = file.readlines()
     cid = creds[0].strip()
     secret = creds[1]
+    username = creds[2]
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
-username, scope = 'Justin Partridge Crapse', 'playlist-modify-private playlist-read-private'
+scope = 'playlist-modify-private playlist-read-private'
 token = util.prompt_for_user_token(username, scope, client_id=cid, client_secret=secret,
                                    redirect_uri='http://localhost:8080')
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager, auth=token)
