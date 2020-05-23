@@ -12,11 +12,11 @@ import config as conf
 with open(conf.CREDS_FILE_PATH, 'r', encoding='utf-8') as file:
     creds = file.readlines()
     cid = creds[0].strip()
-    secret = creds[1]
+    secret = creds[1].strip()
     username = creds[2]
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 scope = 'playlist-modify-private playlist-read-private'
-token = util.prompt_for_user_token(username, scope, client_id=cid, client_secret=secret,
+token = util.prompt_for_user_token(username=username, scope=scope, client_id=cid, client_secret=secret,
                                    redirect_uri='http://localhost:8080')
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager, auth=token)
 user = sp.current_user()

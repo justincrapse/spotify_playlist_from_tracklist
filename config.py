@@ -10,7 +10,7 @@ BREAKS = '/breaks/9'
 DOWNTEMPO = '/electronica-downtempo/3'
 TRAP = '/trap-future-bass/87'
 
-GENRE = TRAP
+GENRE = BREAKS
 GENRE_TEXT = GENRE.split('/')[1].upper()
 TRACKLIST = 'top_100_bp.txt'
 PLAYLIST_NAME = f'BP_TOP_100_{GENRE_TEXT}_{month}_{year}'
