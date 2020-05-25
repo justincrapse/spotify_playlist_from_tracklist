@@ -1,10 +1,3 @@
-Entry:DJ DIlect|Dial uP>Pass The Mic>
-Search:DJ DIlect Dial uP Pass The Mic 
-Tracks:
-Expected Artists:DJ DIlect|Dial uP
-Found Artists:None
-Normalized: sub focus|wilkinson in sub focus wilkinson
-
 Entry:Digital Base|Andy Vibes>Its Gonna Be Alright>
 Search:Digital Base Andy Vibes Its Gonna Be Alright 
 Tracks:
@@ -17,49 +10,70 @@ Search:DJ Self Ondamike Kerry Luv Never Giving Up
 Tracks:
 Expected Artists:DJ Self|Ondamike|Kerry Luv
 Found Artists:None
-Normalized: krafty kuts in krafty kuts
+Normalized: smookie illson|clb|keith mackenzie in smookie illson clb keith mackenzie
 
 Entry:BUSTA NU JAM>Moves>
 Search:BUSTA NU JAM Moves 
 Tracks:
 Expected Artists:BUSTA NU JAM
 Found Artists:None
-Normalized: bombo rosa in bombo rosa
-
-Entry:The Brainkiller>One Day>
-Search:The Brainkiller One Day 
-Tracks:
-Expected Artists:The Brainkiller
-Found Artists:None
-Normalized: editors|joris voorn in editors joris voorn
+Normalized: huda hudia|dj30a in huda hudia dj30a
 
 Entry:Si-Dog>Shifting Gears>
 Search:Si-Dog Shifting Gears 
 Tracks:
 Expected Artists:Si-Dog
 Found Artists:None
-Normalized: underground utopia in underground utopia
+Normalized: dj hero|ondamike in ondamike dj hero
+
+Entry:Jrok>WHAT YOU WANT>
+Search:Jrok WHAT YOU WANT 
+Tracks:
+Expected Artists:Jrok
+Found Artists:None
+Normalized: meat katie|guau in meat katie guau
 
 Entry:DJ Q>Optimum Thinking>
 Search:DJ Q Optimum Thinking 
 Tracks:
 Expected Artists:DJ Q
 Found Artists:None
-Normalized: suga7|yo speed in suga7 yo speed
+Normalized: awesome 3 in awesome 3
 
-Entry:DJ Icey>What You Need>
-Search:DJ Icey What You Need 
+Entry:DJ Icey>Van Skippa>
+Search:DJ Icey Van Skippa 
 Tracks:
 Expected Artists:DJ Icey
 Found Artists:None
-Normalized: hypression in hypression
+Normalized: huda hudia|dj30a in huda hudia dj30a
 
-Entry:DJ Icey>Always Room>
-Search:DJ Icey Always Room 
+Entry:Tedy Leon>Dale Dale>
+Search:Tedy Leon Dale Dale 
 Tracks:
-Expected Artists:DJ Icey
+Expected Artists:Tedy Leon
 Found Artists:None
-Normalized: paket in paket
+Normalized: jay tripwire in jay tripwire
+
+Entry:Pavane>Swing>
+Search:Pavane Swing 
+Tracks:
+Expected Artists:Pavane
+Found Artists:None
+Normalized: algorithmic funk in algorithmic funk
+
+Entry:Sekret Chadow>Gimme A Funky>
+Search:Sekret Chadow Gimme A Funky 
+Tracks:
+Expected Artists:Sekret Chadow
+Found Artists:None
+Normalized: love regenerator in love regenerator calvin harris
+
+Entry:DJ Icey|Montana Rangers>I Want You>
+Search:DJ Icey Montana Rangers I Want You 
+Tracks:
+Expected Artists:DJ Icey|Montana Rangers
+Found Artists:None
+Normalized: love regenerator in love regenerator calvin harris
 
 Entry:NeuroziZ|G$Montana|GN>We On!>
 Search:NeuroziZ G$Montana GN We On! 
@@ -68,59 +82,38 @@ Expected Artists:NeuroziZ|G$Montana|GN
 Found Artists:GN G Montana NeuroziZ
 Normalized: neuroziz|g$montana|gn in gn g montana neuroziz
 
-Entry:Ondamike>SPOOKY>
-Search:Ondamike SPOOKY 
+Entry:Pray For Bass>No Perro No Calle>
+Search:Pray For Bass No Perro No Calle 
 Tracks:
-Expected Artists:Ondamike
+Expected Artists:Pray For Bass
 Found Artists:None
-Normalized: neuroziz|g$montana|gn in gn g montana neuroziz
+Normalized: dj icey in dj icey
 
-Entry:Basstyler>Indian Tune>
-Search:Basstyler Indian Tune 
+Entry:Lady Shade>Hantavirus>
+Search:Lady Shade Hantavirus 
 Tracks:
-Expected Artists:Basstyler
+Expected Artists:Lady Shade
 Found Artists:None
-Normalized: the prodigy in the prodigy
-
-Entry:Pavane>Swing>
-Search:Pavane Swing 
-Tracks:
-Expected Artists:Pavane
-Found Artists:None
-Normalized: the prodigy in the prodigy
+Normalized: dj icey in dj icey
 
 Entry:City-Wide Allstars>Rikkitikki>
 Search:City-Wide Allstars Rikkitikki 
 Tracks:
 Expected Artists:City-Wide Allstars
 Found Artists:None
-Normalized: master disaster|dassier chams in master disaster dassier chams
+Normalized: dj icey in dj icey
 
-Entry:Jrok>WHAT YOU WANT>
-Search:Jrok WHAT YOU WANT 
+Entry:DREWWAVE|Donawave>Fakir>Shade K|Terrie Kynd
+Search:DREWWAVE Donawave Fakir Shade K Terrie Kynd
 Tracks:
-Expected Artists:Jrok
+Expected Artists:DREWWAVE|Donawave|Shade K|Terrie Kynd
 Found Artists:None
-Normalized: hankook in hankook
+Normalized: the prodigy in the prodigy
 
-Entry:DJ Icey>Van Skippa>
-Search:DJ Icey Van Skippa 
+Entry:Spansih Zombies>Money Money>
+Search:Spansih Zombies Money Money 
 Tracks:
-Expected Artists:DJ Icey
+Expected Artists:Spansih Zombies
 Found Artists:None
-Normalized: underground utopia|alt-a in underground utopia alt-a
-
-Entry:Sekret Chadow>Gimme A Funky>
-Search:Sekret Chadow Gimme A Funky 
-Tracks:
-Expected Artists:Sekret Chadow
-Found Artists:None
-Normalized: krafty kuts in krafty kuts
-
-Entry:DJ Icey|Montana Rangers>I Want You>
-Search:DJ Icey Montana Rangers I Want You 
-Tracks:
-Expected Artists:DJ Icey|Montana Rangers
-Found Artists:None
-Normalized: hankook in hankook
+Normalized: basstyler in basstyler
 

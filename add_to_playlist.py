@@ -41,6 +41,8 @@ for entry in track_list:
     all_there = False
     artists = None
     track_titles = [track['name'] for track in search_results['tracks']['items']]
+    artists_normal = ''
+    expected_lower_str = ''
     for track in search_results['tracks']['items']:
         # check if all expected artists are in the track:
         artists = ' '.join(artist['name'] for artist in track['artists'])
