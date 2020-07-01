@@ -19,17 +19,17 @@ Expected Artists:Slander|William Black
 Found Artists:None
 Normalized:  in 
 
-Entry:DJ Fixx>Sleeping>
-Search:DJ Fixx Sleeping 
-Tracks:
-Expected Artists:DJ Fixx
-Found Artists:None
-Normalized:  in 
-
 Entry:Craze|Four Color Zack|2?>Monkey Biz>
 Search:Craze Four Color Zack 2? Monkey Biz 
 Tracks:Monkey Biz
 Expected Artists:Craze|Four Color Zack|2?
 Found Artists:2¢ Craze Four Color Zack
 Normalized: craze|four color zack|2? in 2c/ craze four color zack
+
+Entry:DJ Fixx>Body Baby>
+Search:DJ Fixx Body Baby 
+Tracks:
+Expected Artists:DJ Fixx
+Found Artists:None
+Normalized:  in 
 

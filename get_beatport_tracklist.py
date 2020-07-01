@@ -6,7 +6,6 @@ from lxml import html
 import config as conf
 
 base_url = 'https://www.beatport.com'
-
 genre = conf.GENRE
 endpoint = f'{base_url}/genre{genre}/top-100'
 
@@ -36,3 +35,4 @@ current_path = Path(__file__).parent.absolute()
 with open(f'{current_path}/track_lists/top_100_bp.txt', 'w', encoding='utf-8') as file:
     artist_track_list = zip(artists, track_titles, remixers)
     [file.write(','.join(i).rstrip() + '\n') for i in artist_track_list]
+

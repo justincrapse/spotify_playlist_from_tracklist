@@ -30,11 +30,19 @@ if not playlist_id:
 current_path = Path(__file__).parent.absolute()
 with open(f'{current_path}/track_lists/{conf.TRACKLIST}', 'r', encoding='utf-8') as file:
     reader = csv.reader(file, delimiter=",")
-    track_list = [row for row in reader]
+    track_dict_list = []
+    for row in reader:
+        track_dict_list.append(
+            {
+                'artist': row[0].split('|'),
+                'track': row[1],
+                'remixers': row[2].split('|')
+            }
+        )
 
 tracks_found = []
 missing_tracks = []
-for entry in track_list:
+for entry in track_dict_list:
     search_string = ' '.join(entry).replace('|', ' ')
     expected_artists = entry[0].split('|') + entry[2].split('|') if entry[2] else entry[0].split('|')
     search_results = sp.search(q=search_string, type='track')
@@ -73,4 +81,3 @@ with open(f'{current_path}/results/{conf.PLAYLIST_NAME}', 'w', encoding='utf-8')
     file.writelines(missing_tracks)
 
 my_util.update_playlist(playlist_id=playlist_id, user_id=user_id, tracks=tracks_found, sp=sp)
-
