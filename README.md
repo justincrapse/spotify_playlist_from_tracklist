@@ -1,3 +1,5 @@
+### NOTE: This is being comepletely overhauled at the moment and would be a mess to set up during these big changes. I expect to have something much more helpful in the coming months (hopefully by August)
+
 # spotify_playlist_from_tracklist
 Create a spotify playlist from a track list
 
