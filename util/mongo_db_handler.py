@@ -1,5 +1,6 @@
 
 import pymongo
+from pymongo.errors import DuplicateKeyError
 
 
 class MDBConnection:
@@ -16,6 +17,13 @@ class MDBConnection:
 
     def insert_many(self, document_list):
         self.collection.insert_many(document_list)
+
+    def insert_one_by_list(self, document_list):
+        for document in document_list:
+            try:
+                self.insert_one(payload=document)
+            except DuplicateKeyError as e:
+                pass
 
     def get_all_spotify_ids(self):
         result = self.collection.find({})
@@ -36,4 +44,8 @@ class MDBConnection:
 
 if __name__ == '__main__':
     mdb = MDBConnection()
+    mdb.set_collection('missing_tracks')
+    mdb.collection.create_index('search_string', unique=True)
+    indexes = mdb.collection.list_indexes()
+    print(list(indexes))
     mdb.insert_one(payload={'Apples': 44, 'Feeling': 'Awesome'})

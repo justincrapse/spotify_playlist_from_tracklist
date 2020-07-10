@@ -77,12 +77,12 @@ class SpotipyHandler:
                     break
             if not all_there:
                 entry.update({
-                    'Search': search_string,
-                    'Tracks': track_titles,
-                    'Expected Artists': expected_artists,
-                    'Found Artists': artists,
-                    'expected vs. found': (expected_lower_str, artists_normal.lower()),
-                    'Normalized Match': expected_lower_str in artists_normal.lower()
+                    'search_string': search_string,
+                    'tracks_found': track_titles,
+                    'expected_artists': expected_artists,
+                    'found_artists': artists,
+                    'expected_vs_found': (expected_lower_str, artists_normal.lower()),
+                    'normlized_match_bool_result': expected_lower_str in artists_normal.lower()
                 })
                 missing_tracks.append(entry)
         return tracks_found, missing_tracks
@@ -97,6 +97,10 @@ class SpotipyHandler:
         except SpotifyException as e:
             print('haha')
             raise e
+
+    def update_playlist_by_name(self, playlist_name, track_id_list):
+        playlist_id = self.get_playlist_id_by_name(playlist_name=playlist_name)
+        self.update_playlist(playlist_id=playlist_id, track_id_list=track_id_list)
 
     def playlist_list_by_track(self, track_id):
         """ returns a list of playlist names the track is found in """
