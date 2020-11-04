@@ -65,7 +65,7 @@ class SpotipyHandler:
                 re_clean = re.compile(r'[()&,]|feat\.?|([rR]e)?[Mm]ix|[eE]xtended|[oO]riginal')
                 re_space = re.compile(r'\s{2,}')
                 artists_clean = re_clean.sub('', artists)
-                artists_white = re_space.sub(' ', artists_clean)
+                artists_white = re_space.sub(' ', artists_clean)                            
                 # TODO: implement text match rules for special characters
                 # artists_white = artists_white.replace('ï', 'i').replace('Ø', 'o').replace('ö', 'o')
                 artists_normal = unidecode.unidecode(artists_white)

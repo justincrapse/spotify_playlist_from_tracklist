@@ -27,7 +27,7 @@ re_sp = re.compile(r'\s{2,}')
 
 
 def get_top_100_playlist(genre_url_snippet) -> List[dict]:
-    if genre_url_snippet == 'top'
+    if genre_url_snippet == 'top':
         endpoint = f'{base_url}/top-100'
     else:
         endpoint = f'{base_url}/genre{genre_url_snippet}/top-100'
