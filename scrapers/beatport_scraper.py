@@ -14,7 +14,7 @@ bp_genre_dict = dict(
     PSY_TRANCE='/psy-trance/13',
     BREAKS='/breaks/9',
     DOWNTEMPO='/electronica-downtempo/3',
-    TRAP='/trap-future-bass/87',
+    TOP='top'
 )
 
 base_url = 'https://www.beatport.com'
@@ -27,7 +27,10 @@ re_sp = re.compile(r'\s{2,}')
 
 
 def get_top_100_playlist(genre_url_snippet) -> List[dict]:
-    endpoint = f'{base_url}/genre{genre_url_snippet}/top-100'
+    if genre_url_snippet == 'top'
+        endpoint = f'{base_url}/top-100'
+    else:
+        endpoint = f'{base_url}/genre{genre_url_snippet}/top-100'
     cached_playlist = mdb.get_cached_playlist(genre_url=endpoint, date=f'{year}-{month}-{day}')
     if cached_playlist:
         return cached_playlist
