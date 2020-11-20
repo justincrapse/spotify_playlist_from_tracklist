@@ -21,16 +21,16 @@ class SpotifyPlaylistBuilder:
 
     def update_bp_playlist(self, genre, url):
         top_100_dict_list = beatport_scraper.get_top_100_playlist(genre_url_snippet=url)
-        playlist_name = f'BP_TOP_100_{genre}_{self.month}_{self.year}'
-        playlist_id = self.my_sp.get_playlist_id_by_name(playlist_name=playlist_name)
-        if not playlist_id:
-            playlist_id = self.my_sp.create_playlist(playlist_name=playlist_name)
+        # playlist_name = f'BP_TOP_100_{genre}_{self.month}_{self.year}'
+        # playlist_id = self.my_sp.get_playlist_id_by_name(playlist_name=playlist_name)
+        # if not playlist_id:
+        #     playlist_id = self.my_sp.create_playlist(playlist_name=playlist_name)
         tracks_found, missing_tracks = self.my_sp.get_track_lists(track_list=top_100_dict_list)
         tracks_to_add = [track for track in tracks_found if track['id'] not in self.existing_spotify_track_id_list]
         track_ids_to_add = [track['id'] for track in tracks_to_add]
-        if track_ids_to_add:
-            self.my_sp.update_playlist(playlist_id=playlist_id, track_id_list=track_ids_to_add)
-            print(f'{len(track_ids_to_add)} tracks added for {playlist_name} playlist')
+        # if track_ids_to_add:
+        #     self.my_sp.update_playlist(playlist_id=playlist_id, track_id_list=track_ids_to_add)
+        #     print(f'{len(track_ids_to_add)} tracks added for {playlist_name} playlist')
         self.tracks_found, self.missing_tracks = tracks_found, missing_tracks
 
         # add to mongodb:
