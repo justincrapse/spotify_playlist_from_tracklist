@@ -10,11 +10,13 @@ day, month, year = now.day, now.month, now.year
 from util.mongo_db_handler import MDBConnection
 
 bp_genre_dict = dict(
-    TRANCE='/trance/7',
-    PSY_TRANCE='/psy-trance/13',
+    # TRANCE='/trance/7',
     BREAKS='/breaks/9',
-    DOWNTEMPO='/electronica-downtempo/3',
-    TOP='top'
+    DOWNTEMPO='/organic-house-downtempo/93',
+    DEEP_HOUSE='/deep-house/12',
+    BASS_HOUSE='/bass-house/91',
+    PROGRESSIVE_HOUSE='/progressive-house/15'
+    # TOP='top'
 )
 
 base_url = 'https://www.beatport.com'
