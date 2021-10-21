@@ -27,6 +27,7 @@ class SpotifyPlaylistBuilder:
         #     playlist_id = self.my_sp.create_playlist(playlist_name=playlist_name)
         tracks_found, missing_tracks = self.my_sp.get_track_lists(track_list=top_100_dict_list)
         tracks_to_add = [track for track in tracks_found if track['id'] not in self.existing_spotify_track_id_list]
+        print(f'Adding {len(tracks_to_add)} tracks to {genre}')
         track_ids_to_add = [track['id'] for track in tracks_to_add]
         # if track_ids_to_add:
         #     self.my_sp.update_playlist(playlist_id=playlist_id, track_id_list=track_ids_to_add)

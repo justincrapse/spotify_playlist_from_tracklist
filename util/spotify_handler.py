@@ -3,6 +3,7 @@ import re
 import spotipy
 import unidecode
 from spotipy.oauth2 import SpotifyClientCredentials
+from spotipy.oauth2 import SpotifyOAuth
 from spotipy import util
 from spotipy.exceptions import SpotifyException
 
@@ -20,9 +21,10 @@ class SpotipyHandler:
     def __init__(self, username=username, cid=cid, secret=secret):
         client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
         scope = 'playlist-modify-private playlist-read-private'  # playlist-read-public playlist-modify-public
-        token = util.prompt_for_user_token(username=username, scope=scope, client_id=cid, client_secret=secret,
-                                           redirect_uri='http://localhost:8080')
-        self.sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager, auth=token)
+        # token = util.prompt_for_user_token(username=username, scope=scope, client_id=cid, client_secret=secret,
+        #                                    redirect_uri='http://localhost:8080')
+        auth_manager = SpotifyOAuth(scope=scope, username=username, client_id=cid, client_secret=secret, redirect_uri='http://localhost:8080')
+        self.sp = spotipy.Spotify(auth_manager=auth_manager)
         self.user = self.sp.current_user()
         self.user_id = self.user['id']
         self.current_playlists = self.get_playlists()
