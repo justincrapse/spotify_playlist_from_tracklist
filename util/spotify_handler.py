@@ -53,7 +53,8 @@ class SpotipyHandler:
         tracks_found = []
         missing_tracks = []
         for entry in track_list:
-            search_string = ' '.join(entry['artists']) + ' ' + entry['track_title'] + ' ' + ' '.join(entry['remixers'])
+            # search_string = ' '.join(entry['artists']) + ' ' + entry['track_title'] + ' ' + ' '.join(entry['remixers'])
+            search_string = ' '.join(entry['artists']) + ' ' + ' '.join(entry['track_title'])
             expected_artists = entry['artists']
             search_results = self.sp.search(q=search_string, type='track')
             all_there = False
